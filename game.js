@@ -70,6 +70,8 @@ $(".btn").click(function (){
 
 $(document).keydown (function () {
     if(flag){
+        gamePattern = [];
+        userClickedPattern = [];
         nextSequence();
         $('#level-title').html("Level " + level);
         flag = false;
